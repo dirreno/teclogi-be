@@ -1,20 +1,16 @@
 package com.example.teclogibe.model;
 
-
-
-import com.example.teclogibe.service.Satellite;
-
 import java.util.Arrays;
 
 public class TrackingModel {
-    private String[] satellites;
+    private SatelliteModel[] satellites;
     private String[] message;
 
-    public String[] getSatellites() {
+    public SatelliteModel[] getSatellites() {
         return satellites;
     }
 
-    public void setSatellites(String [] satellites) {
+    public void setSatellites(SatelliteModel[] satellites) {
         this.satellites = satellites;
     }
 
@@ -33,4 +29,6 @@ public class TrackingModel {
                 ", message=" + Arrays.toString(message) +
                 '}';
     }
+
+
 }

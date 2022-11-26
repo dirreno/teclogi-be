@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Service {
-    static float[] getLocation(float r0, float r1, float r2) {
+    public static float[] getLocation(float r0, float r1, float r2) {
         Satellite sputnik = new Satellite("Sputnik", -500, -200);
         Satellite explorer = new Satellite("Explorer", 100, -100);
         Satellite asterix = new Satellite("Asterix", 500, 100);
@@ -85,7 +85,7 @@ public class Service {
         }
     }
 
-    static Boolean isInDanger(String[] message) {
+    public static Boolean isInDanger(String[] message) {
         ArrayList<ArrayList<String>> m = new  ArrayList<>();
         for (int i = 0; i < message.length; i++){
             ArrayList<String> list = new ArrayList<>(Arrays.asList(message[i].split("")));
